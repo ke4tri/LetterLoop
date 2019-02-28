@@ -7,34 +7,41 @@ namespace LetterLoops
     {
         static void Main(string[] args)
         {
-            List<string> letters = new List<string>();
+            List<string> let = new List<string>();
 
             Console.WriteLine("Enter some random letters");
 
+
+
             var input = Console.ReadLine();
 
-            char[] characters = input.ToCharArray();
-            foreach (char c in characters)
+
+            //char[] characters = input.ToCharArray();
+            string[] stringLetters = new string[input.Length];
+            char[] charArray = input.ToCharArray();
+
+            foreach (var item in charArray)
             {
-                //Label1.Text += c.ToString() + " ";
-                Console.WriteLine(c.ToString());
-                Console.ReadLine();
+                Console.Write(item + "-");
+                
             }
+            Console.ReadLine();
 
-            //   int i,j;
-            //   int n=5;
-
-            //for(i=1;i<=n;i++)
+            //for (int i = 0; i < input.Length; i++)
             //{
-            //    for(j=1;j<=i;j++)
-            //    {
-            //        Console.Write((char)(i+64));
-
-            //    }
-
-            //    Console.WriteLine("");
+            //    stringLetters[i] = $"{input[i]}";
+            //    Console.WriteLine(input[i]);
+            //    Console.ReadLine();
             //}
-            //   Console.ReadLine();
+
+            //string testString;
+            //Console.Write("Enter Random letters with no spaces : ");
+            //testString = Console.ReadLine();
+            //Console.WriteLine("You entered '{0}'", testString);
+            //Console.WriteLine("Hit Enter to continue.");
+            //Console.ReadLine();
+
+
         }
           
         
