@@ -23,9 +23,13 @@ namespace LetterLoops
             for (int i = 0; i < input.Length; i++)
             {
                 int multipler = i;
+                string inputString = input[i].ToString();
                 string inputMulti = new string(input[i], multipler);
+                string build = inputString.ToUpper() + ( input[i] + inputMulti + "-");
                 // Console.Write((input[i] * i) + "-");
-                Console.Write(inputMulti);
+                Console.Write(build);
+                
+                
             }
             Console.ReadLine();
             
